@@ -56,7 +56,7 @@ class SitePushCore
 	public $dest_backup_path; //file archives, db_dumps etc **required**
 
 	//mysqldump options
-	private $dump_options = "--opt --verbose";
+	private $dump_options = "--opt --verbose --default-character-set=utf8";
 	
 	//rsync/ssh options - used for pushing to remote site
 	public $remote_user; //user account on remote destination //???
